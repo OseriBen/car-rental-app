@@ -9,7 +9,7 @@ import logo4 from "../assets/logo4.png";
 import logo5 from "../assets/logo5.png";
 import logo6 from "../assets/logo6.png";
 import logo7 from "../assets/logo7.png";
-import bookingBg from "../assets/booking-bg.jpg";
+import bookingBg from "../assets/book-bg.jpg";
 
 export default function Booking() {
   const [car, setCar] = useState("");
