@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global dark theme */
+html,
+body {
+  @apply bg-black text-white antialiased;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+}
