@@ -19,18 +19,18 @@ export default function SeeMore() {
   const [success, setSuccess] = useState("");
 
   const cars = [
-    { name: "Bentley Flying Spur", img: "/src/assets/car1.png", price: 300 },
-    { name: "Rolls-Royce Ghost", img: "/src/assets/car2.png", price: 350 },
-    { name: "Ferrari 488 Spider", img: "/src/assets/car3.png", price: 400 },
-    { name: "Mercedes G-Wagon", img: "/src/assets/car4.png", price: 280 },
-    { name: "Lamborghini Huracán", img: "/src/assets/car5.png", price: 420 },
-    { name: "Porsche 911 Turbo", img: "/src/assets/car6.png", price: 380 },
-    { name: "Range Rover Evoque", img: "/src/assets/car7.png", price: 250 },
-    { name: "BMW M8 Competition", img: "/src/assets/car8.png", price: 320 },
-    { name: "Audi R8 V10 Plus", img: "/src/assets/car9.png", price: 340 },
-    { name: "Maserati Levante", img: "/src/assets/car10.png", price: 260 },
-    { name: "Jaguar F-Type", img: "/src/assets/car11.png", price: 270 },
-    { name: "Tesla Model X Plaid", img: "/src/assets/car12.png", price: 300 },
+    { name: "Bentley Flying Spur", img: "/src/assets/card1.png", price: 300 },
+    { name: "Rolls-Royce Ghost", img: "/src/assets/card2.png", price: 350 },
+    { name: "Ferrari 488 Spider", img: "/src/assets/card3.png", price: 400 },
+    { name: "Mercedes G-Wagon", img: "/src/assets/card4.png", price: 280 },
+    { name: "Lamborghini Huracán", img: "/src/assets/card5.png", price: 420 },
+    { name: "Porsche 911 Turbo", img: "/src/assets/card6.png", price: 380 },
+    { name: "Range Rover Evoque", img: "/src/assets/card7.png", price: 250 },
+    { name: "BMW M8 Competition", img: "/src/assets/card8.png", price: 320 },
+    { name: "Audi R8 V10 Plus", img: "/src/assets/card9.png", price: 340 },
+    { name: "Maserati Levante", img: "/src/assets/card10.png", price: 260 },
+    { name: "Jaguar F-Type", img: "/src/assets/card11.png", price: 270 },
+    { name: "Tesla Model X Plaid", img: "/src/assets/card12.png", price: 300 },
   ];
 
   const handleChange = (e) => {
