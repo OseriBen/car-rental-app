@@ -1,10 +1,24 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar"; 
-import Booking from "../components/Booking"; 
-import heroBg from "../assets/see-more-hero.jpg"; 
+import Navbar from "../components/Navbar";
+import Booking from "../components/Booking";
+import heroBg from "../assets/see-more-hero.jpg";
+
+
+import card01 from "../assets/card01.png";
+import card02 from "../assets/card02.png";
+import card03 from "../assets/card03.png";
+import card04 from "../assets/card04.png";
+import card05 from "../assets/card05.png";
+import card06 from "../assets/card06.png";
+import card07 from "../assets/card07.png";
+import card08 from "../assets/card08.png";
+import card09 from "../assets/card09.png";
+import card10 from "../assets/card10.png";
+import card11 from "../assets/card11.png";
+import card12 from "../assets/card12.png";
 
 export default function SeeMore() {
-  const [selectedCar, setSelectedCar] = useState(null); 
+  const [selectedCar, setSelectedCar] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,19 +32,20 @@ export default function SeeMore() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
+  
   const cars = [
-    { name: "Bentley Flying Spur", img: "/src/assets/card01.png", price: 300 },
-    { name: "Rolls-Royce Ghost", img: "/src/assets/card02.png", price: 350 },
-    { name: "Ferrari 488 Spider", img: "/src/assets/card03.png", price: 400 },
-    { name: "Mercedes G-Wagon", img: "/src/assets/card04.png", price: 280 },
-    { name: "Lamborghini Huracán", img: "/src/assets/card05.png", price: 420 },
-    { name: "Porsche 911 Turbo", img: "/src/assets/card06.png", price: 380 },
-    { name: "Range Rover Evoque", img: "/src/assets/card07.png", price: 250 },
-    { name: "BMW M8 Competition", img: "/src/assets/card08.png", price: 320 },
-    { name: "Audi R8 V10 Plus", img: "/src/assets/card09.png", price: 340 },
-    { name: "Maserati Levante", img: "/src/assets/card10.png", price: 260 },
-    { name: "Jaguar F-Type", img: "/src/assets/card11.png", price: 270 },
-    { name: "Tesla Model X Plaid", img: "/src/assets/card12.png", price: 300 },
+    { name: "Bentley Flying Spur", img: card01, price: 300 },
+    { name: "Rolls-Royce Ghost", img: card02, price: 350 },
+    { name: "Ferrari 488 Spider", img: card03, price: 400 },
+    { name: "Mercedes G-Wagon", img: card04, price: 280 },
+    { name: "Lamborghini Huracán", img: card05, price: 420 },
+    { name: "Porsche 911 Turbo", img: card06, price: 380 },
+    { name: "Range Rover Evoque", img: card07, price: 250 },
+    { name: "BMW M8 Competition", img: card08, price: 320 },
+    { name: "Audi R8 V10 Plus", img: card09, price: 340 },
+    { name: "Maserati Levante", img: card10, price: 260 },
+    { name: "Jaguar F-Type", img: card11, price: 270 },
+    { name: "Tesla Model X Plaid", img: card12, price: 300 },
   ];
 
   const handleChange = (e) => {
@@ -56,7 +71,7 @@ export default function SeeMore() {
 
     setError("");
     setSuccess(" Booking Successful! We’ll contact you shortly.");
-    
+
     setFormData({
       name: "",
       email: "",
@@ -76,8 +91,8 @@ export default function SeeMore() {
 
   return (
     <div className="bg-black text-white">
-      {/* Navbar now works same everywhere */}
-      <Navbar /> 
+      {/* Navbar */}
+      <Navbar />
 
       {/* Hero Section */}
       <section
@@ -179,7 +194,10 @@ export default function SeeMore() {
             {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
             {success && <p className="text-green-500 text-sm mb-4">{success}</p>}
 
-            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form
+              onSubmit={handleSubmit}
+              className="grid grid-cols-1 md:grid-cols-2 gap-6"
+            >
               <input
                 type="text"
                 name="name"
@@ -210,7 +228,9 @@ export default function SeeMore() {
                 onChange={handleChange}
                 className="bg-transparent border-b border-gray-600 focus:border-[#bfa37c] outline-none py-2"
               >
-                <option value="" className="bg-black">Trip Type</option>
+                <option value="" className="bg-black">
+                  Trip Type
+                </option>
                 <option className="bg-black">Business</option>
                 <option className="bg-black">Leisure</option>
                 <option className="bg-black">Event</option>
